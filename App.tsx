@@ -12,8 +12,8 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Quiz">
-        <Stack.Screen name="Quiz" component={QuizScreen} options={{ headerShown: false }} />
-        <Stack.Screen name="Leaderboard" component={LeaderboardScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="Quiz" component={QuizScreen}  />
+        <Stack.Screen name="Leaderboard" component={LeaderboardScreen}  />
       </Stack.Navigator>
     </NavigationContainer>
   );

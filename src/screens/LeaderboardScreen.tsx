@@ -13,9 +13,7 @@ const LeaderboardScreen: React.FC = () => {
   const leaderboard = useQuizStore((state) => state.leaderboard);
 
   return (
-    <View className="flex-1 p-4 bg-gray-100">
-      <NavigationMenu />
-      <Text className="text-2xl font-bold mb-4">Leaderboard</Text>
+    <View className="flex-1 bg-gray-100 py-2">
       <FlatList
         data={leaderboard}
         keyExtractor={(item, index) => index.toString()}
@@ -25,6 +23,7 @@ const LeaderboardScreen: React.FC = () => {
           </View>
         )}
       />
+       <NavigationMenu />
     </View>
   );
 };
